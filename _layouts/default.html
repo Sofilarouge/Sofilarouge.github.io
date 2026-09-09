@@ -27,12 +27,12 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
       -->
-      <h1>h1 txt in header</h1>
-      <h2>h2 txt in header</h2>
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <!--{{ content }}-->
       <h1>Main header 1</h1>
       <p>Main text</p>
 
