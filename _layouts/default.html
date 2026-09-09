@@ -29,6 +29,8 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
