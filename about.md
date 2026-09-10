@@ -1,8 +1,9 @@
 ---
 layout: default
-title: About
+title: About Me
+description: "Roboticist & Mechanical Engineer"
 ---
-# About page
+# Jack of all trades, Master in Robotics
 
 This page tells you a little bit about me.
 
