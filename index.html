@@ -29,7 +29,8 @@ layout: default
           <h2>{{ project.name }}</h2>
           <h3>{{ project.subtitle }}</h3>
           <p>{{ project.content | markdownify }}</p>
-          <p>{{ project.keywords | markdownify }}</p>
+          <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
+          <hr />
         </li>
       {% endfor %}
     </ul>
