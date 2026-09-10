@@ -4,6 +4,8 @@ subtitle: "Group project for student initiative Robocol (2019) Universidad de lo
 keywords: "keywords: multibody dynamics, mechanical design, prototype construction, motion control, trajectory planning, finite state machine"
 image_url: /assets/images/remu2.jpg
 ---
+![fish2](/assets/images/remu2.jpg)
+
 Supervised by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
 Co-Authors: ---
