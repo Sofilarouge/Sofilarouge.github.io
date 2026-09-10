@@ -21,10 +21,12 @@ layout: default
     -->
     
     <p>{{ "text in index file"}}</p>
+    <!--
     <img src="/assets/images/carangiform1.jpg" alt="carangigorm1">
     <p>{{ "carangiform1 should be up here"}}</p>
+    -->
 
-    <p>{{ "project list should be down here:"}}</p>
+    <!-- <p>{{ "project list should be down here:"}}</p> -->
     <hr />
     <ul>
       {% for project in site.projects %}
@@ -33,6 +35,7 @@ layout: default
           <!--<h3>{{ project.subtitle }}</h3>-->
           <p>{{ project.content | markdownify }}</p>
           <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
+          <img src={{ project.image_url }}" alt="image">
           <hr />
         </li>
       {% endfor %}
