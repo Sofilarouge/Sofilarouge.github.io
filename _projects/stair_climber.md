@@ -4,7 +4,7 @@ subtitle: "Semester group project for the class Design of Mechanical Systems (20
 keywords: "keywords: multibody dynamics, mechanical design, prototype construction, motion control, trajectory planning, finite state machine, group project"
 image_url: /assets/images/stair_climber2.jpg
 ---
-![fish2](/assets/images/climber2.jpg)
+![stair_climber2](/assets/images/stair_climber2.jpg)
 
 Directed by: Prof. Dr. Rodrigo Alberto Marin Castillo
 
