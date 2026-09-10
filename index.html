@@ -12,8 +12,10 @@ layout: default
   <body>
     <h1>{{ "h1 in index file" | downcase }}</h1>
     <p>{{ "link to about page should be down here:"}}</p>
-    <a href="/about.md">About</a>
-    <a href="/">Same page</a>
+    <nav>
+      <a href="/about.md">About</a> |
+      <a href="/">Same page</a>
+    </nav>
     <p>{{ "text in index file"}}</p>
     <img src="/assets/images/carangiform1.jpg" alt="carangigorm1">
     <p>{{ "carangiform1 should be up here"}}</p>
@@ -22,7 +24,6 @@ layout: default
     <ul>
       {% for project in site.projects %}
         <li>
-          <p>{{ "pew"}}</p>
           <h2>{{ project.name }}</h2>
           <h3>{{ project.year }}</h3>
           <h3>{{ project.association }}</h3>
