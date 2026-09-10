@@ -11,23 +11,26 @@ layout: default
   </head>
   <body>
     <h1>{{ "h1 in index file" | downcase }}</h1>
-    <p>{{ "link to about page should be down here:"}}</p>
+    <a href="/about.html">About Me</a>
     
+    <!--
     <nav>
       <a href="/about.html">About Me</a> |
       <a href="/">Same page</a>
     </nav>
+    -->
     
     <p>{{ "text in index file"}}</p>
     <img src="/assets/images/carangiform1.jpg" alt="carangigorm1">
     <p>{{ "carangiform1 should be up here"}}</p>
 
     <p>{{ "project list should be down here:"}}</p>
+    <hr />
     <ul>
       {% for project in site.projects %}
         <li>
           <h2>{{ project.name }}</h2>
-          <h3>{{ project.subtitle }}</h3>
+          <!--<h3>{{ project.subtitle }}</h3>-->
           <p>{{ project.content | markdownify }}</p>
           <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
           <hr />
