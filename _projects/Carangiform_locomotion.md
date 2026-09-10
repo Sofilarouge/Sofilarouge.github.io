@@ -2,7 +2,6 @@
 name: "Carangiform Locomotion"
 subtitle: "Bachelor's thesis for Mechanical Engineering (B.Sc.) (2019) Universidad de los Andes"
 keywords: "keywords: multibody dynamics, mechanical design, experimental characterization, biomimetics, prototype construction"
-image_link: ![fish2](/assets/images/fish2.jpg)
 image_url: /assets/images/fish2.jpg
 ---
 Directed by Prof. Dr. Rodriguez H, Carlos Francisco
