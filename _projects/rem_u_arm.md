@@ -3,6 +3,7 @@ name: "Rem-U Robotic Arm"
 subtitle: "Group project for student initiative Robocol (2019) Universidad de los Andes"
 keywords: "keywords: multibody dynamics, mechanical design, prototype construction, motion control, trajectory planning, finite state machine"
 image_link: ![fish2](/assets/images/remu2.jpg)
+image_url: /assets/images/remu2.jpg
 ---
 Supervised by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
