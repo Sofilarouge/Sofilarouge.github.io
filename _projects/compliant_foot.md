@@ -2,6 +2,7 @@
 name: "Compliant Prosthetic Foot"
 subtitle: "Semester project for the class Neuroprosthetics (2022) TUM"
 keywords: "keywords: multibody dynamics, topological optimization, mechanical design, compliant mechanism, 3D printing, user-centered design"
+image_link: ![fish2](/assets/images/foot2.jpg)
 ---
 Directed by Prof. Dr. Cristina Piazza
 Co-Authors: Balan, Nithin
