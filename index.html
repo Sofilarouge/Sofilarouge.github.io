@@ -31,17 +31,17 @@ layout: default
     <ul>
       {% for project in site.projects %}
         <li>
-          <h2>{{ project.name }}</h2>
-          <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+          <!--<h2>{{ project.name }}</h2>-->
+          <h2><a href="{{ project.url }}" style="color:#157878>{{ project.name }}</a></h2>
           {% if project.co-authors %}
-            <p>{{ "Co-authors: "}} - {{ project.co-authors }}</p>
+            <p><small>{{ "Co-authors: "}} - {{ project.co-authors }}</small></p>
           {% endif %}
           {% if project.director %}
-            <p>{{ "Directed by: "}} - {{ project.director }}</p>
+            <p><small>{{ "Directed by: "}} - {{ project.director }}</small></p>
           {% endif %}
           <p>{{ project.summary | markdownify }}</p>
           {% if project.Emphasis %}
-            <p>{{ project.Emphasis | markdownify }}</p>
+            <p><strong>{{ project.Emphasis | markdownify }}</p></strong>
           {% endif %}
           <!--<p>{{ project.content | markdownify }}</p>-->
           <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
