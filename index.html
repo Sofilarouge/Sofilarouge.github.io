@@ -32,7 +32,7 @@ layout: default
       {% for project in site.projects %}
         <li>
           <!--<h2>{{ project.name }}</h2>-->
-          <h2><a href="{{ project.url }}" style="color:#157878>{{ project.name }}</a></h2>
+          <h2><a href="{{ project.url }}" style="color:#157878;">{{ project.name }}</a></h2>
           {% if project.co-authors %}
             <p><small>{{ "Co-authors: "}} - {{ project.co-authors }}</small></p>
           {% endif %}
