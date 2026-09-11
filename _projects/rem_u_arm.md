@@ -14,6 +14,8 @@ Co-Authors: Robocol Team 2019-2020
 
 Mechanical design and motion control of a low-budget, 6 DoF robotic arm Intended for use on the exploration rover REM-U for the European rover Challenge (ERC) competition. Project developed as mechanical engineering lead for the student initiative Robocol (2019) Universidad de los Andes.
 
+![fish2](/assets/images/remu1.jpg)
+
 This project involved the complete design and manufacture of the rover REM-U from scratch as the flagship project for the student initiative Robocol. My main contribution (and the focus of this entry) as lead of mechanical engineering was centered around the robotic arm, for which a budget of less than $500 USD was allocated. The arm was expected to carry a payload of 10 kg.
 
 The first stage of the design was iterative: Required motor driving torques were obtained as a result of a multibody dynamic simulation starting from rough dimensions, configurations, and properties. The model was adjusted and the simulation recalculated until a suitable configuration (with affordable motors) was found.
