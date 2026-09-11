@@ -62,7 +62,16 @@ timezone            : null
 
 quiet               : false
 verbose             : false
-defaults            : []
+defaults            :
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project_layout"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 liquid:
   error_mode        : warn
