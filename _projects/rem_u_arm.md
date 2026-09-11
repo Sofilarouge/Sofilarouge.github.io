@@ -22,4 +22,7 @@ The first stage of the design was iterative: Required motor driving torques were
 
 The project constraints also determined the component and material selection: 3D printed ABS and laser-cut MDF made up most of the structure. For the more robust mechanical couplings, aluminium components were manufactured either by CNC, lathe, or bent aluminium profile sheet. All of the manufacture and assembly was made in-house by the team.
 
+![fish2](/assets/images/remu4.jpg)
+![fish2](/assets/images/remu5.jpg)
+
 Finally, the same parameters and models used for the dynamic simulation were used to formulate a control strategy. Potentiometers connected to the joints allowed the formulation of closed-loop control. ROS MoveIt was used to control the arm (as well as the rest of the rover) in one of two modes: during manual operation, a user used a joystick to command the position and apperture of the end effector. During autonomous operation, the robot moved to predetermined configurations as defined with a finite state machine.
