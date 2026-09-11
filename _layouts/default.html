@@ -36,10 +36,10 @@
       % if page.title == "Sofía La Rota López" %}
         <a href="/about.html" class="btn">About Me</a>
         <a href="/" class="btn">Contact Info</a>
-      {% elsif if page.title == "About Me"  %}
+      {% elsif page.title == "About Me"  %}
         <a href="/" class="btn">Contact Info</a>
         <a href="/" class="btn">Back to Portfolio</a>
-      {% elsif if page.collection == 'projects' %}
+      {% elsif page.collection == 'projects' %}
         <a href="/" class="btn">Back to Portfolio</a>
       {% else%}
         <a href="/about.html" class="btn">About Me</a>
