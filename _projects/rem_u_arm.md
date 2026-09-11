@@ -18,8 +18,8 @@ Mechanical design and motion control of a low-budget, 6 DoF robotic arm Intended
 
 <table>
   <tr>
-    <th>![remu1](/assets/images/remu1.jpg)</th>
-    <th>![remu3](/assets/images/remu3.jpg)</th>
+    <th><img src="/assets/images/remu1.jpg" alt="carangigorm1"></th>
+    <th><img src="/assets/images/remu3.jpg" alt="carangigorm1"></th>
   </tr>
   <tr>
     <td>Left</td>
