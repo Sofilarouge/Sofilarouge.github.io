@@ -27,7 +27,7 @@ The basic actuator design for each fish segment is comprised of a double lever m
 <h2>{{ "4. Robot Construction" }}</h2>
 The final design consisted of three segments in series, each with defined dimensions according to the desired movement. The fish body housed the power circuit necessary for their activation. A flexible yet waterproof latex membrane covered the tail segments. Some pictures of the construction process can be seen below:
 
-![fish2](/assets/images/fish3.jpg)
+![fish2](/assets/images/fish3.jpeg)
 ![fish2](/assets/images/fish4.jpg)
 
 Because of time constraints and the ammount of current needed to drive the mechanism, the current was provided externally. Safety features included several fuses sepparating the driving current from the housed electronics, as well as indicator light and and a dead man switch to protect the operator during testing.
