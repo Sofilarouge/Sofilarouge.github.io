@@ -33,8 +33,17 @@ layout: default
         <li>
           <h2>{{ project.name }}</h2>
           <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-          <!--<h3>{{ project.subtitle }}</h3>-->
-          <p>{{ project.content | markdownify }}</p>
+          {% if project.co-authors %}
+            <p>{{ "Co-authors: "}} - {{ project.co-authors }}</p>
+          {% endif %}
+          {% if project.director %}
+            <p>{{ "Directed by: "}} - {{ project.director }}</p>
+          {% endif %}
+          <p>{{ project.summary | markdownify }}</p>
+          {% if project.Emphasis %}
+            <p>{{ project.Emphasis | markdownify }}</p>
+          {% endif %}
+          <!--<p>{{ project.content | markdownify }}</p>-->
           <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
           <img src={{ project.image_url }}" alt="">
           <hr />
