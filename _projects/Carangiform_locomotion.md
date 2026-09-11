@@ -1,5 +1,5 @@
 ---
-name: "Carangiform Locomotion"
+name: "Design of a Bionic, Shape-Memory Alloy Fish Tail"
 subtitle: "Bachelor's thesis for Mechanical Engineering (B.Sc.) (2019) Universidad de los Andes"
 keywords: "keywords: multibody dynamics, mechanical design, experimental characterization, biomimetics, prototype construction"
 image_url: /assets/images/fish2.jpg
