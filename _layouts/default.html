@@ -32,31 +32,23 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <!--taken from the field "description" in config file-->
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      
+      % if page.title == "Sofía La Rota López" %}
+        <a href="/about.html" class="btn">About Me</a>
+        <a href="/" class="btn">Contact Info</a>
+      {% elsif if page.title == "About Me"  %}
+        <a href="/" class="btn">Contact Info</a>
+        <a href="/" class="btn">Back to Portfolio</a>
+      {% elsif if page.collection == 'projects' %}
+        <a href="/" class="btn">Back to Portfolio</a>
+      {% else%}
+        <a href="/about.html" class="btn">About Me</a>
+      {% endif %}
     </header>
 
     <main id="content" class="main-content" role="main">
-      <!--this line provided txt from readme file-->
+
       {{ content }}
-      <!--
-      <h1>Jack of all trades, Master in Robotics</h1>
-      <p>This page compiles a selection of non-commercial projects I have been involved in. Feel free to browse around.</p>
-
-      <h2>Compliant Foot Prothesis</h2>
-      <p>Main text</p>
-
-      <h2>Bionic Fish Tail</h2>
-      <p>Main text</p>
-
-      <h2>REM-U Robotic Arm</h2>
-      <p>Main text</p>
-
-      <h2>Automous Stair-Climber Robot</h2>
-      <p>Main text</p>
-      
-      <h2>Projects for the University Space Program</h2>
-      <p>Main text</p>
-
-      -->
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
