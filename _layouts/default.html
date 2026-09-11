@@ -16,34 +16,13 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <!--
+
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-      -->
-      <!--{this is the text that shows up in the colored banner}-->
-      <!--taken from title of readme file-->
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <!--taken from the field "description" in config file-->
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       
-      % if page.title == "Sofía La Rota López" %}
-        <a href="/about.html" class="btn">About Me</a>
-        <a href="/" class="btn">Contact Info</a>
-      {% elsif page.title == "About Me"  %}
-        <a href="/" class="btn">Contact Info</a>
-        <a href="/" class="btn">Back to Portfolio</a>
-      {% elsif page.collection == 'projects' %}
-        <a href="/" class="btn">Back to Portfolio</a>
-      {% else%}
-        <a href="/about.html" class="btn">About Me</a>
-      {% endif %}
+      <a href="/about.html" class="btn">About Me</a>
+      <a href="/" class="btn">Contact Info</a>
+      <!--<a href="/" class="btn">Back to Portfolio</a>-->
     </header>
 
     <main id="content" class="main-content" role="main">
