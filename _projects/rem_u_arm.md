@@ -16,6 +16,17 @@ Mechanical design and motion control of a low-budget, 6 DoF robotic arm Intended
 
 ![fish2](/assets/images/remu1.jpg)
 
+<table>
+  <tr>
+    <th>![remu1](/assets/images/remu1.jpg)</th>
+    <th>![remu3](/assets/images/remu3.jpg)</th>
+  </tr>
+  <tr>
+    <td>Left</td>
+    <td>Right</td>
+  </tr>
+</table>
+
 This project involved the complete design and manufacture of the rover REM-U from scratch as the flagship project for the student initiative Robocol. My main contribution (and the focus of this entry) as lead of mechanical engineering was centered around the robotic arm, for which a budget of less than $500 USD was allocated. The arm was expected to carry a payload of 10 kg.
 
 The first stage of the design was iterative: Required motor driving torques were obtained as a result of a multibody dynamic simulation starting from rough dimensions, configurations, and properties. The model was adjusted and the simulation recalculated until a suitable configuration (with affordable motors) was found.
