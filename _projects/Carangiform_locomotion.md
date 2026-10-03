@@ -7,7 +7,7 @@ director: "Prof. Dr. Carlos Francisco Rodriguez Herrera"
 summary: "Design, construction and characterization of a modular biomimetic fish tail powered by Shape-Memory Alloy (SMA) actuators. Part of my Bachelor's thesis for Mechanical Engineering (B.Sc.) (2019) Universidad de los Andes."
 Emphasis: "Awarded Silver Award for Best Student Paper, Symposium on Multibody Systems and Mechatronics (MuSMe 2020-2021)." 
 ---
-![fish2](/assets/images/fish2.jpg)
+![fish2](/assets/images/Carangiform_locomotion/fish2.jpg)
 
 Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
@@ -16,10 +16,18 @@ This semester-long project involved the design and characterization of a modular
 <h2>{{ "1. Dynamic Model" }}</h2>
 The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water.
 
+![fish_model](/assets/images/Carangiform_locomotion/fish_model.png_)
+![element_model](/assets/images/Carangiform_locomotion/element_model.png)
+
 This enabled me to modelthe driving forces and torques as a function of the fish movement and geometry, and therefore, begin with the component selection and modular mechanism design.
 
 <h2>{{ "2. Component Characterization" }}</h2>
 Shape-memory alloy (SMA) wires, like artificial muscles, contract rapidly when an electrical current is applied to them. More precisely, their elongation is a function of their temperature and therefore can be modeled quite accurately as first-order reaction curves. However, this has some critical implications: the time they take to relax back to their original lenght depends on heat dissipation. This implies that the same actuator has two distinct dynamic behaviors with different time constants for contraction and relaxation. These constants were obtained experimentally.
+
+<video width="640" height="360" autoplay muted>
+  <source src="/assets/images/Carangiform_locomotion/wire_pulse.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <h2>{{ "3. Modular Actuator Design" }}</h2>
 The basic actuator design for each fish segment is comprised of a double lever mechanism. The experimental jig was used to find and select a viable oscillating frenquency, movement amplitude, the electrical input and heat dissipation medium needed to achieve it. The results were iteratively compared to the dynamic model until a suitable configuration was found. 
