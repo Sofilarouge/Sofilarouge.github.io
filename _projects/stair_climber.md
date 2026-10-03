@@ -4,13 +4,13 @@ subtitle: "Semester group project for the class Design of Mechanical Systems (20
 keywords: "keywords: multibody dynamics, mechanical design, prototype construction, motion control, trajectory planning, finite state machine, group project"
 image_url: /assets/images/stair_climber2.jpg
 director: "Prof. Dr. Rodrigo Alberto Marin Castillo"
-co-authors: "tba"
+co-authors: "Juan Camilo Julio, Miguel Sotelo Buitrago, Sebastián Plata, Fabián Andrés Rico, Alexander Murcia, Pedro Rubiano"
 summary: "Design, component selection, and motion control of an autononous simple stair climber robot. Developed for the semester group project for the class Design of Mechanical Systems (2019) Universidad de los Andes as lead of dynamic systems."
 ---
 ![stair_climber2](/assets/images/stair_climber2.jpg)
 
 Directed by: Prof. Dr. Rodrigo Alberto Marin Castillo
 
-Co-Authors: ---
+Co-Authors: Juan Camilo Julio, Miguel Sotelo Buitrago, Sebastián Plata, Fabián Andrés Rico, Alexander Murcia, Pedro Rubiano
 
 Design, component selection, and motion control of an autononous simple stair climber robot. Developed for the semester group project for the class Design of Mechanical Systems (2019) Universidad de los Andes as lead of dynamic systems.

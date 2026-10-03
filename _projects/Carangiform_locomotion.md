@@ -3,13 +3,13 @@ name: "Design of a Bionic, Shape-Memory Alloy Fish Tail"
 subtitle: "Bachelor's thesis for Mechanical Engineering (B.Sc.) (2019) Universidad de los Andes"
 keywords: "keywords: multibody dynamics, mechanical design, experimental characterization, biomimetics, prototype construction"
 image_url: /assets/images/fish2.jpg
-director: "Prof. Dr. Rodriguez H, Carlos Francisco"
+director: "Prof. Dr. Carlos Francisco Rodriguez Herrera"
 summary: "Design, construction and characterization of a modular biomimetic fish tail powered by Shape-Memory Alloy (SMA) actuators. Part of my Bachelor's thesis for Mechanical Engineering (B.Sc.) (2019) Universidad de los Andes."
 Emphasis: "Awarded Silver Award for Best Student Paper, Symposium on Multibody Systems and Mechatronics (MuSMe 2020-2021)." 
 ---
 ![fish2](/assets/images/fish2.jpg)
 
-Directed by Prof. Dr. Rodriguez H, Carlos Francisco
+Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
 This semester-long project involved the design and characterization of a modular actuator intended for use in a biomimetic fish tail undergoing carangiform (undulatory) locomotion. The modules generate rotational motion by shape-memory alloy (SMA) wires acting as agonist and antagonist muscle pairs. Finally, the first prototype for the fish tail was built and tested. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://repositorio.uniandes.edu.co/challenge?next=%2Fflip%2F) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31).
 
