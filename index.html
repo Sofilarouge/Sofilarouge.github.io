@@ -50,9 +50,8 @@ layout: default
           {% if project.Emphasis %}
             <p><strong>{{ project.Emphasis | markdownify }}</p></strong>
           {% endif %}
-          <!--<p>{{ project.content | markdownify }}</p>-->
           <p style="color: gray;"><small>{{ project.keywords | markdownify }}</small></p>
-          <img src={{ project.image_url }}" alt="">
+          <!-- <img src={{ project.image_url }}" alt=""> -->
           <hr />
         </li>
       {% endfor %}
