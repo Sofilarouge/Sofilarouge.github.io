@@ -10,28 +10,27 @@ Emphasis: "Awarded Silver Award for Best Student Paper, Symposium on Multibody S
 ![fish2](/assets/images/Carangiform_locomotion/fish2.jpg)
 Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
-This semester-long project involved the design and characterization of a modular actuator intended for use in a biomimetic fish tail undergoing carangiform (undulatory) locomotion.
+This semester-long project explored the use of shape-memory alloy (SMA) as solid-state actuators used to power a biomimetic fish tail undergoing carangiform (undulatory) locomotion. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31).
 
-<video height="360" autoplay muted loop>
+<video height="100" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/carangiform_locomotion_cropped.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
- The modules generate rotational motion by shape-memory alloy (SMA) wires acting as agonist and antagonist muscle pairs. Finally, the first prototype for the fish tail was built and tested. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31).
+ <!-- The modules generate rotational motion by shape-memory alloy (SMA) wires acting as agonist and antagonist muscle pairs. Finally, the first prototype for the fish tail was built and tested. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31). -->
 
 <h2>{{ "1. Dynamic Model" }}</h2>
-The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water.
+<!-- The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water. -->
 
 <table style="width:100%">
   <tr>
-    <th style="width:30%"><img src="/assets/images/Carangiform_locomotion/element_model.PNG" alt="element_model"></th>
-    <th style="width:70%">The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water.</th>
+    <td style="width:30%"><img src="/assets/images/Carangiform_locomotion/element_model.PNG" alt="element_model"></td>
+    <td style="width:70%">The flexible body of a fish was modeled as a series of rigid, interconnected, oscilating elements subjected to dynamic hydrodinamic forces. The lift produced by the elements generates a forward motion.</td>
   </tr>
 </table>
 
 
 ![fish_model](/assets/images/Carangiform_locomotion/fish_model.PNG)
-![element_model](/assets/images/Carangiform_locomotion/element_model.PNG)
 
 This enabled me to model the driving forces and torques as a function of the fish movement and geometry, and therefore, begin with the component selection and modular mechanism design.
 
