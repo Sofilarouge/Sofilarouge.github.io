@@ -15,10 +15,10 @@ This semester-long project involved the design and characterization of a modular
 <h2>{{ "1. Dynamic Model" }}</h2>
 The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water.
 
-![fish_model](/assets/images/Carangiform_locomotion/fish_model.png_)
-![element_model](/assets/images/Carangiform_locomotion/element_model.png)
+![fish_model](/assets/images/Carangiform_locomotion/fish_model.PNG)
+![element_model](/assets/images/Carangiform_locomotion/element_model.PNG)
 
-This enabled me to modelthe driving forces and torques as a function of the fish movement and geometry, and therefore, begin with the component selection and modular mechanism design.
+This enabled me to model the driving forces and torques as a function of the fish movement and geometry, and therefore, begin with the component selection and modular mechanism design.
 
 <h2>{{ "2. Component Characterization" }}</h2>
 Shape-memory alloy (SMA) wires, like artificial muscles, contract rapidly when an electrical current is applied to them. More precisely, their elongation is a function of their temperature and therefore can be modeled quite accurately as first-order reaction curves. However, this has some critical implications: the time they take to relax back to their original lenght depends on heat dissipation. This implies that the same actuator has two distinct dynamic behaviors with different time constants for contraction and relaxation. These constants were obtained experimentally.
@@ -40,4 +40,15 @@ The final design consisted of three segments in series, each with defined dimens
 Because of time constraints and the ammount of current needed to drive the mechanism, the current was provided externally. Safety features included several fuses sepparating the driving current from the housed electronics, as well as indicator light and and a dead man switch to protect the operator during testing.
 
 <h2>{{ "5. Testing and Conclusions" }}</h2>
+
+<video width="640" height="360" autoplay muted loop>
+  <source src="/assets/images/Carangiform_locomotion/swimming_sim.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Preliminary testing revealed the mechanism's susceptibility to the surrounding water temperature. Finally, some movement was achieved when the fish was immersed in a warm bath. Unfortunately, whether the fish could propel itself and how closely this movement resembled the simulated model remained unanswered, as the power source became unreliable during testing.
+
+<video width="640" height="360" autoplay muted loop>
+  <source src="/assets/images/Carangiform_locomotion/swimming.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
