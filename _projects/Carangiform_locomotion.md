@@ -8,7 +8,6 @@ summary: "Design, construction and characterization of a modular biomimetic fish
 Emphasis: "Awarded Silver Award for Best Student Paper, Symposium on Multibody Systems and Mechatronics (MuSMe 2020-2021)." 
 ---
 ![fish2](/assets/images/Carangiform_locomotion/fish2.jpg)
-
 Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
 This semester-long project involved the design and characterization of a modular actuator intended for use in a biomimetic fish tail undergoing carangiform (undulatory) locomotion. The modules generate rotational motion by shape-memory alloy (SMA) wires acting as agonist and antagonist muscle pairs. Finally, the first prototype for the fish tail was built and tested. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://repositorio.uniandes.edu.co/challenge?next=%2Fflip%2F) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31).
@@ -24,7 +23,7 @@ This enabled me to modelthe driving forces and torques as a function of the fish
 <h2>{{ "2. Component Characterization" }}</h2>
 Shape-memory alloy (SMA) wires, like artificial muscles, contract rapidly when an electrical current is applied to them. More precisely, their elongation is a function of their temperature and therefore can be modeled quite accurately as first-order reaction curves. However, this has some critical implications: the time they take to relax back to their original lenght depends on heat dissipation. This implies that the same actuator has two distinct dynamic behaviors with different time constants for contraction and relaxation. These constants were obtained experimentally.
 
-<video width="640" height="360" autoplay muted>
+<video width="640" height="360" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/wire_pulse.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
