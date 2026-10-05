@@ -10,48 +10,77 @@ Emphasis: "Awarded Silver Award for Best Student Paper, Symposium on Multibody S
 ![fish2](/assets/images/Carangiform_locomotion/fish2.jpg)
 Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
-This semester-long project explored the use of shape-memory alloy (SMA) as solid-state actuators used to power a biomimetic fish tail undergoing carangiform (undulatory) locomotion. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31).
+Propeller-driven ROVs have been successfully used for open water exploration for decades now. However, there are some concerns about the impact of propeller blades on the most delicate reef ecosystems. There are also some concerns about the electromagnetic and acoustic noise caused by motors, as they particularly impact key species such as sharks. As an alternative, this semester-long project explored the use of shape-memory alloy (SMA) to power a biomimetic fish tail undergoing carangiform (undulatory) locomotion. To that end, a modular double-lever mechanism was designed and characterized experimentally. Its purpose is to create a controlled rotational movement using two SMA wires that contract and relax, just like a pair of muscles would.
 
-<video height="100" autoplay muted loop>
+![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.TIF)
+
+For brevity's sake, the following page includes only a brief overview, and the more theoretical aspects have been largely glossed over. Please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31) for a proper description of the mathematical model.
+
+<video height="200" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/carangiform_locomotion_cropped.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
- <!-- The modules generate rotational motion by shape-memory alloy (SMA) wires acting as agonist and antagonist muscle pairs. Finally, the first prototype for the fish tail was built and tested. For brevity's sake, the following page includes only a brief overview. For in-depth information, please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31). -->
+<h2>{{ "SMA Module Design and Characterization" }}</h2>
 
-<h2>{{ "1. Dynamic Model" }}</h2>
-<!-- The starting point of the project began with a suitable dynamic and kinematic model of a fish undergoing carangiform locomotion. To this end, the flexible body of a fish was simplified as a series of rigid, interconnected segments, each of which was being subjected to the fluid dynamics of oscilating foils in water. -->
+![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.TIF)
 
-<table style="width:100%">
-  <tr>
-    <td style="width:30%"><img src="/assets/images/Carangiform_locomotion/element_model.PNG" alt="element_model"></td>
-    <td style="width:70%">The flexible body of a fish was modeled as a series of rigid, interconnected, oscilating elements subjected to dynamic hydrodinamic forces. The lift produced by the elements generates a forward motion.</td>
-  </tr>
-</table>
-
-
-![fish_model](/assets/images/Carangiform_locomotion/fish_model.PNG)
-
-This enabled me to model the driving forces and torques as a function of the fish movement and geometry, and therefore, begin with the component selection and modular mechanism design.
-
-<h2>{{ "2. Component Characterization" }}</h2>
-Shape-memory alloy (SMA) wires, like artificial muscles, contract rapidly when an electrical current is applied to them. More precisely, their elongation is a function of their temperature and therefore can be modeled quite accurately as first-order reaction curves. However, this has some critical implications: the time they take to relax back to their original lenght depends on heat dissipation. This implies that the same actuator has two distinct dynamic behaviors with different time constants for contraction and relaxation. These constants were obtained experimentally.
+The driving principle of the double lever mechanism added several layers of complexity, the first of which was experimental characterization in lieu of known dynamic behavior. To that end, a testing jig was constructed. On first glance, the wire seemingy exhibits a classical frst-order response to a known current step input.
 
 <video width="640" height="360" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/wire_pulse.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<h2>{{ "3. Modular Actuator Design" }}</h2>
-The basic actuator design for each fish segment is comprised of a double lever mechanism. The experimental jig was used to find and select a viable oscillating frenquency, movement amplitude, the electrical input and heat dissipation medium needed to achieve it. The results were iteratively compared to the dynamic model until a suitable configuration was found. 
+However, the biggest issue was the fact that SMA dynamics require solving a series of heat transfer problems: SMA wire relative lenght contraction is correlated to the material temperature itself, not to the input current or voltage. This means that, unless heat can be dissipated as quickly as it is administered, the same actuator has two distinct dynamic behaviors for contraction and relaxation. Through iteration and experimentation, a suitable configuration was found for sustained oscillations at a reasonable frequency.
 
-<h2>{{ "4. Robot Construction" }}</h2>
-The final design consisted of three segments in series, each with defined dimensions according to the desired movement. The fish body housed the power circuit necessary for their activation. A flexible yet waterproof latex membrane covered the tail segments. Some pictures of the construction process can be seen below:
+![1hz_flutter](/assets/images/Carangiform_locomotion/1hz_flutter.TIF)
+
+Finally, the experimental results were used in combination with the SMA wire properties to graph the possible movement amplitude and torque limits for modules of different dimensions, which was useful to establish their operational ranges.
+
+![mechanism_graphs](/assets/images/Carangiform_locomotion/mechanism_graphs.PNG)
+
+
+<h2>{{ "Fish Tail Kinematic and Dynamic Model" }}</h2>
+
+The next step was defining how the fish tail segments would move, i.e. the driving functions for each actuator. The process to achieve this was iterative: first, a swimming configuration and mechanism dimensions were initialized, and the necessary driving torques for it were calculated. The parameters were tweaked until the theoretical amplitudes and torques were consistent with the module operational ranges.
+
+No specialized multibody dynamics simulation software was used, as none was available. Instead, the fish tail was abstracted to a system of nonlinear equations to be solved.
+
+<table style="width:100%">
+  <tr>
+    <td style="width:30%"><img src="/assets/images/Carangiform_locomotion/element_model.PNG" alt="element_model"></td>
+    <td style="width:70%">The flexible tail of a fish was modeled as a series of three rigid, interconnected propulsive elements connected by holonomic rotational joints. The overall swimming motion can be decomposed as three driving functions describing the relative angle between each element and the previous one. For simplicity, we assume all three driving functions to be sinusoidal, each with a characteristic phase and amplitude. </td>
+  </tr>
+</table>
+
+
+![fish_model](/assets/images/Carangiform_locomotion/fish_model.PNG)
+
+Lagrangian mechanics and generalized coordinates were used to describe the equations of motion, as well as its kinematic and driving constraints. To solve the system dynamics, the added mass coefficients of the tail were considered, as were the acting unstable hydrodynamic forces. These were modeled using the Kutta Jukowsky theorem (again, plese refer to the full thesis for a proper description). The resulting system of equations were highly nonlinear. Therefore, they were solved numerically by using Newton's method in Matlab. An animation of the final selected configuration can be seen below:
+
+<video width="640" height="360" autoplay muted loop>
+  <source src="/assets/images/Carangiform_locomotion/swimming_sim.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h2>{{ "Electromechanical Prototype Construction" }}</h2>
+
+Once a suitable configuration was found, a tail was constructed using mostly laser-cut aluminium and 3D printed profiles. SMA wires were attached connected to the central wiring using screw terminals. Here it is shown from above (a) and below (b).
+
+![fish_tail](/assets/images/Carangiform_locomotion/tail_foto.TIF)
+
+Meanwhile, the fish body housed the power circuit necessary for their activation. To eliminate the complexities associated with batteries, the driving current was provided externally. A simplified schematic can be seen below:
+
+The circuit board consisted mainly of transistors that acted as valves to power the mechanism according to the signal voltage provided by an Arduino Nano. A voltage follower was added to further insulate the Arduino from the driving current. Additionally, other safety features included indicator LEDS and and a dead man's switch to avoid accidental activation. To eliminate the complexities associated with batteries, the driving current was provided externally.
+
+Of course, the prototype was tested for complete waterproofness underwater before any further testing was done.
+
+Some pictures of the construction process can be seen below:
 
 ![fish2](/assets/images/fish3.jpeg)
 ![fish2](/assets/images/fish4.jpg)
 
-Because of time constraints and the ammount of current needed to drive the mechanism, the current was provided externally. Safety features included several fuses sepparating the driving current from the housed electronics, as well as indicator light and and a dead man switch to protect the operator during testing.
 
 <h2>{{ "5. Testing and Conclusions" }}</h2>
 
@@ -60,9 +89,13 @@ Because of time constraints and the ammount of current needed to drive the mecha
   Your browser does not support the video tag.
 </video>
 
-Preliminary testing revealed the mechanism's susceptibility to the surrounding water temperature. Finally, some movement was achieved when the fish was immersed in a warm bath. Unfortunately, whether the fish could propel itself and how closely this movement resembled the simulated model remained unanswered, as the power source became unreliable during testing.
+Preliminary testing was simple: dunk the fish in water and see what happens when it's activated. Buoyancy was corrected using a pouch of coins. Due to the thermal suceptibility of the driving mechanism, it was perhaps not suprising to notice that room temperature water proved to be too effective at heat dispersion, and thus the movement was noticeably sluggish, even if some forward motion was achieved.
 
 <video width="640" height="360" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/swimming.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+Even if the mechanism does not move exacly as intended, some important conclusions can be drawn. While it is perfectly possible to make a biomimetic fish using SMA wire actuators, it would be difficult to argue in favor of its suitability for underwater exploration due to its energetical inefficiency.
+
+
