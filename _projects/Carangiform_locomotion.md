@@ -14,25 +14,25 @@ Propeller-driven ROVs have been successfully used for open water exploration for
 
 For brevity's sake, the following page includes only a brief overview, and the more theoretical aspects have been largely glossed over. Please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31) for a proper description of the mathematical model.
 
-<video height="200" autoplay muted loop>
+<video height="250" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/carangiform_locomotion_cropped.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 <h2>{{ "SMA Module Design and Characterization" }}</h2>
 
-![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.tif)
+![Double_lever_mechanism?](/assets/images/Carangiform_locomotion/mechanism.PNG)
 
 The driving principle of the double lever mechanism added several layers of complexity, the first of which was experimental characterization in lieu of known dynamic behavior. To that end, a testing jig was constructed. On first glance, the wire seemingy exhibits a classical frst-order response to a known current step input.
 
-<video width="640" height="360" autoplay muted loop>
+<video width="800" height="360" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/wire_pulse.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 However, the biggest issue was the fact that SMA dynamics require solving a series of heat transfer problems: SMA wire relative lenght contraction is correlated to the material temperature itself, not to the input current or voltage. This means that, unless heat can be dissipated as quickly as it is administered, the same actuator has two distinct dynamic behaviors for contraction and relaxation. Through iteration and experimentation, a suitable configuration was found for sustained oscillations at a reasonable frequency.
 
-![1hz_flutter](/assets/images/Carangiform_locomotion/1hz_flutter.tif)
+![1hz_flutter?](/assets/images/Carangiform_locomotion/1hz_flutter.PNG)
 
 Finally, the experimental results were used in combination with the SMA wire properties to graph the possible movement amplitude and torque limits for modules of different dimensions, which was useful to establish their operational ranges.
 
@@ -57,7 +57,7 @@ No specialized multibody dynamics simulation software was used, as none was avai
 
 Lagrangian mechanics and generalized coordinates were used to describe the equations of motion, as well as its kinematic and driving constraints. To solve the system dynamics, the added mass coefficients of the tail were considered, as were the acting unstable hydrodynamic forces. These were modeled using the Kutta Jukowsky theorem (again, plese refer to the full thesis for a proper description). The resulting system of equations were highly nonlinear. Therefore, they were solved numerically by using Newton's method in Matlab. An animation of the final selected configuration can be seen below:
 
-<video width="640" height="360" autoplay muted loop>
+<video width="800" height="360" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/swimming_sim.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -66,7 +66,7 @@ Lagrangian mechanics and generalized coordinates were used to describe the equat
 
 Once a suitable configuration was found, a tail was constructed using mostly laser-cut aluminium and 3D printed profiles. SMA wires were attached connected to the central wiring using screw terminals. Here it is shown from above (a) and below (b).
 
-![fish_tail](/assets/images/Carangiform_locomotion/tail_foto.tif)
+![fish_tail?](/assets/images/Carangiform_locomotion/tail_foto.PNG)
 
 Meanwhile, the fish body housed the power circuit necessary for their activation. To eliminate the complexities associated with batteries, the driving current was provided externally. A simplified schematic can be seen below:
 
