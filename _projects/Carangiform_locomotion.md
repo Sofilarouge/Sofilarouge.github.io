@@ -12,8 +12,6 @@ Directed by Prof. Dr. Carlos Francisco Rodriguez Herrera
 
 Propeller-driven ROVs have been successfully used for open water exploration for decades now. However, there are some concerns about the impact of propeller blades on the most delicate reef ecosystems. There are also some concerns about the electromagnetic and acoustic noise caused by motors, as they particularly impact key species such as sharks. As an alternative, this semester-long project explored the use of shape-memory alloy (SMA) to power a biomimetic fish tail undergoing carangiform (undulatory) locomotion. To that end, a modular double-lever mechanism was designed and characterized experimentally. Its purpose is to create a controlled rotational movement using two SMA wires that contract and relax, just like a pair of muscles would.
 
-![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.TIF)
-
 For brevity's sake, the following page includes only a brief overview, and the more theoretical aspects have been largely glossed over. Please refer to the [full thesis](https://hdl.handle.net/1992/45039) and [conference paper](https://link.springer.com/chapter/10.1007/978-3-030-60372-4_31) for a proper description of the mathematical model.
 
 <video height="200" autoplay muted loop>
@@ -23,7 +21,7 @@ For brevity's sake, the following page includes only a brief overview, and the m
 
 <h2>{{ "SMA Module Design and Characterization" }}</h2>
 
-![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.TIF)
+![Double_lever_mechanism](/assets/images/Carangiform_locomotion/mechanism.tif)
 
 The driving principle of the double lever mechanism added several layers of complexity, the first of which was experimental characterization in lieu of known dynamic behavior. To that end, a testing jig was constructed. On first glance, the wire seemingy exhibits a classical frst-order response to a known current step input.
 
@@ -34,7 +32,7 @@ The driving principle of the double lever mechanism added several layers of comp
 
 However, the biggest issue was the fact that SMA dynamics require solving a series of heat transfer problems: SMA wire relative lenght contraction is correlated to the material temperature itself, not to the input current or voltage. This means that, unless heat can be dissipated as quickly as it is administered, the same actuator has two distinct dynamic behaviors for contraction and relaxation. Through iteration and experimentation, a suitable configuration was found for sustained oscillations at a reasonable frequency.
 
-![1hz_flutter](/assets/images/Carangiform_locomotion/1hz_flutter.TIF)
+![1hz_flutter](/assets/images/Carangiform_locomotion/1hz_flutter.tif)
 
 Finally, the experimental results were used in combination with the SMA wire properties to graph the possible movement amplitude and torque limits for modules of different dimensions, which was useful to establish their operational ranges.
 
@@ -68,7 +66,7 @@ Lagrangian mechanics and generalized coordinates were used to describe the equat
 
 Once a suitable configuration was found, a tail was constructed using mostly laser-cut aluminium and 3D printed profiles. SMA wires were attached connected to the central wiring using screw terminals. Here it is shown from above (a) and below (b).
 
-![fish_tail](/assets/images/Carangiform_locomotion/tail_foto.TIF)
+![fish_tail](/assets/images/Carangiform_locomotion/tail_foto.tif)
 
 Meanwhile, the fish body housed the power circuit necessary for their activation. To eliminate the complexities associated with batteries, the driving current was provided externally. A simplified schematic can be seen below:
 
@@ -82,12 +80,7 @@ Some pictures of the construction process can be seen below:
 ![fish2](/assets/images/fish4.jpg)
 
 
-<h2>{{ "5. Testing and Conclusions" }}</h2>
-
-<video width="640" height="360" autoplay muted loop>
-  <source src="/assets/images/Carangiform_locomotion/swimming_sim.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<h2>{{ "Testing and Conclusions" }}</h2>
 
 Preliminary testing was simple: dunk the fish in water and see what happens when it's activated. Buoyancy was corrected using a pouch of coins. Due to the thermal suceptibility of the driving mechanism, it was perhaps not suprising to notice that room temperature water proved to be too effective at heat dispersion, and thus the movement was noticeably sluggish, even if some forward motion was achieved.
 
