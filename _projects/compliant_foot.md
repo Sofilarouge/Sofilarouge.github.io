@@ -37,7 +37,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
 
 <figure>
-  <img src="/assets/images/compliant_foot/gait_cycle.pngg" alt="Gait_Cycle" style="width:80%">
+  <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:80%">
   <figcaption>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
 and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
 8.3 (2013), e59935.</figcaption>
@@ -72,31 +72,21 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 
 <h3>{{ "Eversion - Inversion" }}</h3>
 
-<table style="width:100%">
-  <tr>
-    <td style="width:50%">
-    <p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
-    <p>{{ "Stiffness: 3.44 Nm/degree" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.png" alt="angular displacement"></td>
-  </tr>
-  <tr>
-    <td style="width:50%"><video height="250" autoplay muted loop>
-  <source src="/assets/images/compliant_foot/Inversion-Eversion-color.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.png" alt="stiffness"></td>
-  </tr>
-</table>
-
 <p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
 <p>{{ "Stiffness: 3.44 Nm/degree" }}</p>
 <table style="width:100%">
   <tr>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.png" alt="angular displacement"></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.png" alt="stiffness"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.PNG" alt="angular displacement"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
 
+<video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/Dorsilexion-Plantarflexion-Color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!--
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 
 <table style="width:100%">
@@ -146,6 +136,7 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
+-->
 
 <h3>{{ "Simulation Results" }}</h3>
 
