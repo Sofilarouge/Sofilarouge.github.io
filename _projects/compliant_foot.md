@@ -37,7 +37,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
 
 <figure>
-  <img src="/assets/images/compliant_foot/gait_cycle.png.jpg" alt="Gait_Cycle" style="width:80%">
+  <img src="/assets/images/compliant_foot/gait_cycle.pngg" alt="Gait_Cycle" style="width:80%">
   <figcaption>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
 and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
 8.3 (2013), e59935.</figcaption>
@@ -64,7 +64,7 @@ and propulsive work of the human ankle in the stance phase of walking”. In: Pl
 <h2>{{ "Quantitative results: Mechanical Properties according to Simulations" }}</h2>
 <h3>{{ "Gait Cycle" }}</h3>
 
-<!-- ![fish2](/assets/images/compliant_foot/Gait-simul.JPG) -->
+Some of the results can be seen below. For reference: BW refers to a unit of force equivalent to one body weight under standard gravity.
 <figure>
   <img src="/assets/images/compliant_foot/Gait-simul.JPG" alt="Gait_Cycle" style="width:80%">
   <figcaption>Visual comparison of the simulated foot deformations during different stages of the gait cycle.</figcaption>
@@ -74,20 +74,69 @@ and propulsive work of the human ankle in the stance phase of walking”. In: Pl
 
 <table style="width:100%">
   <tr>
-    <td style="width:50%"><p>{{ "text here" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.JPG" alt="graph1"></td>
+    <td style="width:50%">
+    <p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
+    <p>{{ "Stiffness: 3.44 Nm/degree" }}</p></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.png" alt="angular displacement"></td>
   </tr>
   <tr>
-    <td style="width:50%"><p>{{ "foot video here" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.JPG" alt="graph2"></td>
+    <td style="width:50%"><video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/Inversion-Eversion-color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.png" alt="stiffness"></td>
   </tr>
 </table>
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 
+<table style="width:100%">
+  <tr>
+    <td style="width:30%">
+    <p>{{ "Movement amplitude: 5.44° (dorsiflexion) -5.95° (plantar flexion)" }}</p>
+    <p>{{ "Stiffness: 16.29 Nm/degree" }}</p></td>
+    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_1.png" alt="angular displacement"></td>
+    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_2.png" alt="stiffness"></td>
+  </tr>
+</table>
+
+<video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/Dorsilexion-Plantarflexion-Color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <h3>{{ "Toe Joint" }}</h3>
 
+<table style="width:100%">
+  <tr>
+    <td style="width:50%">
+    <p>{{ "Movement amplitude: 20.4°" }}</p>
+    <p>{{ "Stiffness: 6.44 Nm/degree" }}</p></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_1.png" alt="angular displacement"></td>
+  </tr>
+  <tr>
+    <td style="width:50%"><p>{{ "foot video here" }}</p></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_2.png" alt="stiffness"></td>
+  </tr>
+</table>
+
 <h3>{{ "Combined Toe and Heel" }}</h3>
+
+<table style="width:100%">
+  <tr>
+    <td style="width:50%">
+    <p>{{ "Movement amplitude: 11.89° (heel) 34.31° (Toes)" }}</p>
+    <p>{{ "Stiffness: 8.83 Nm/degree" }}</p></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_1.png" alt="angular displacement"></td>
+  </tr>
+  <tr>
+    <td style="width:50%"><video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/Toe-Off.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.png" alt="stiffness"></td>
+  </tr>
+</table>
 
 <h3>{{ "Simulation Results" }}</h3>
 
