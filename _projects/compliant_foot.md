@@ -88,6 +88,15 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
   </tr>
 </table>
 
+<p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
+<p>{{ "Stiffness: 3.44 Nm/degree" }}</p>
+<table style="width:100%">
+  <tr>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.png" alt="angular displacement"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.png" alt="stiffness"></td>
+  </tr>
+</table>
+
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 
 <table style="width:100%">
@@ -95,8 +104,8 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
     <td style="width:30%">
     <p>{{ "Movement amplitude: 5.44° (dorsiflexion) -5.95° (plantar flexion)" }}</p>
     <p>{{ "Stiffness: 16.29 Nm/degree" }}</p></td>
-    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_1.png" alt="angular displacement"></td>
-    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_2.png" alt="stiffness"></td>
+    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_1.PNG" alt="angular displacement"></td>
+    <td style="width:35%"><img src="/assets/images/compliant_foot/sim_dp_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
 
@@ -112,11 +121,11 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
     <td style="width:50%">
     <p>{{ "Movement amplitude: 20.4°" }}</p>
     <p>{{ "Stiffness: 6.44 Nm/degree" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_1.png" alt="angular displacement"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_1.PNG" alt="angular displacement"></td>
   </tr>
   <tr>
     <td style="width:50%"><p>{{ "foot video here" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_2.png" alt="stiffness"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
 
@@ -127,14 +136,14 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
     <td style="width:50%">
     <p>{{ "Movement amplitude: 11.89° (heel) 34.31° (Toes)" }}</p>
     <p>{{ "Stiffness: 8.83 Nm/degree" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_1.png" alt="angular displacement"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_1.PNG" alt="angular displacement"></td>
   </tr>
   <tr>
     <td style="width:50%"><video height="250" autoplay muted loop>
   <source src="/assets/images/compliant_foot/Toe-Off.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.png" alt="stiffness"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
 
