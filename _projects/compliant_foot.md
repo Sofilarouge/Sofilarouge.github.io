@@ -34,7 +34,14 @@ Rather than expensive and delicate electronics, this design relies on mechanical
     <li> <p>{{ "Toe-off: the load is applied at the toes, which accumulate tension to provide a propulsive effect (reaction force equivalent to the body weight applied only on the toe section)." }}</p> </li>
 </ul>
 
-![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png)
+<!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
+
+<figure>
+  <img src="/assets/images/compliant_foot/gait_cycle.png.jpg" alt="Gait_Cycle" style="width:80%">
+  <figcaption>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
+and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
+8.3 (2013), e59935.</figcaption>
+</figure>
 
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
 
@@ -57,7 +64,11 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <h2>{{ "Quantitative results: Mechanical Properties according to Simulations" }}</h2>
 <h3>{{ "Gait Cycle" }}</h3>
 
-![fish2](/assets/images/compliant_foot/Gait-simul.JPG)
+<!-- ![fish2](/assets/images/compliant_foot/Gait-simul.JPG) -->
+<figure>
+  <img src="/assets/images/compliant_foot/Gait-simul.JPG" alt="Gait_Cycle" style="width:80%">
+  <figcaption>Visual comparison of the simulated foot deformations during different stages of the gait cycle.</figcaption>
+</figure>
 
 <h3>{{ "Eversion - Inversion" }}</h3>
 
@@ -83,7 +94,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 
 <p>{{ "" }}</p>
 
-<h2>{{ "Qualitative Results: Visul Similarities in Proof of Concept" }}</h2>
+<h2>{{ "Qualitative Results: Visual Similarities in Proof of Concept" }}</h2>
 <p>{{ " A life-size prototype was printed on TPU Ninja-flex and mounted on a frame. Using our own body weight as reference, we did a visual comparison of the foot deformations when stepping on a small plastic cap. Although no objective measure was used and more accurate testing equipment was unavailable for the project, the experimental results are visually similar to the simulated deformations. " }}</p>
 
 ![fish2](/assets/images/compliant_foot/step_cap.JPG)
