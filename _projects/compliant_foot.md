@@ -14,7 +14,7 @@ Directed by Prof. Dr. Cristina Piazza
 Co-Authors: Balan, Nithin
 
 
-This semester-long project involved the design and first iteration of a foot prosthesis prototype. The motivation behind this design stems from the consecuences of the armed conflict in Colombia, after which a considerable amount of people, mostly inhabitants from remote rural communities, lost their lives or limbs to anti-personnel mines. The design of this soft foot adresses the unique necessities of people who earn ther livelyhood by cultivating crops on the hillsides with steep, irregular terrain.
+This semester-long project involved the design and first iteration of a foot prosthesis prototype. The motivation behind this design stems from the consecuences of the armed conflict in Colombia, after which a considerable amount of people, mostly inhabitants from remote rural communities, lost their lives or limbs to anti-personnel mines. The design of this soft foot adresses the unique necessities of people who earn ther livelyhood by cultivating crops on the hillsides with steep, irregular terrain. The full report can be downloaded <a href="/assets/documents/Final_Report__Design_of_a_Soft_Foot_for_Lower_limb_Prostheses.pdf">here </a>.
 
 Rather than expensive and delicate electronics, this design relies on mechanical simplicity. The design requirements that needed to be met were:
  <ul>
