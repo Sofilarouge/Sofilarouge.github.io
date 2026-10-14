@@ -34,6 +34,8 @@ Rather than expensive and delicate electronics, this design relies on mechanical
     <li> <p>{{ "Toe-off: the load is applied at the toes, which accumulate tension to provide a propulsive effect (reaction force equivalent to the body weight applied only on the toe section)." }}</p> </li>
 </ul>
 
+![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png)
+
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
 
 
@@ -45,7 +47,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 
 <table style="width:100%">
   <tr>
-    <td style="width:40%"><img src="/assets/images/compliant_foot/PRM.jpg" alt="sketch"></td>
+    <td style="width:40%"><img src="/assets/images/compliant_foot/PRM.JPG" alt="sketch"></td>
     <td style="width:60%"><p>{{ "We used the pseudo-rigid model (PRM) approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness. This stiffness depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle. One notable aspect of the design is that joints 2 and 3 (as seen in the sketch) are springs in a serial configuration. During dual-flexion, the toe joint movement is constrained by the floor. However, as soon as the foot starts to lift off during toe-off, this constraint is removed and allows both heel and toe joint to act as a single equivalent (softer) spring. Thus, a change in overall stiffness can be achieved." }}</p></td>
   </tr>
 </table>
@@ -55,18 +57,18 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <h2>{{ "Quantitative results: Mechanical Properties according to Simulations" }}</h2>
 <h3>{{ "Gait Cycle" }}</h3>
 
-![fish2](/assets/images/compliant_foot/Gait-simul.jpg)
+![fish2](/assets/images/compliant_foot/Gait-simul.JPG)
 
 <h3>{{ "Eversion - Inversion" }}</h3>
 
 <table style="width:100%">
   <tr>
     <td style="width:50%"><p>{{ "text here" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.jpg" alt="graph1"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.JPG" alt="graph1"></td>
   </tr>
   <tr>
     <td style="width:50%"><p>{{ "foot video here" }}</p></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.jpg" alt="graph2"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/Ev_inv_stiffness.JPG" alt="graph2"></td>
   </tr>
 </table>
 
@@ -84,5 +86,5 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <h2>{{ "Qualitative Results: Visul Similarities in Proof of Concept" }}</h2>
 <p>{{ " A life-size prototype was printed on TPU Ninja-flex and mounted on a frame. Using our own body weight as reference, we did a visual comparison of the foot deformations when stepping on a small plastic cap. Although no objective measure was used and more accurate testing equipment was unavailable for the project, the experimental results are visually similar to the simulated deformations. " }}</p>
 
-![fish2](/assets/images/compliant_foot/step_cap.jpg)
+![fish2](/assets/images/compliant_foot/step_cap.JPG)
 
