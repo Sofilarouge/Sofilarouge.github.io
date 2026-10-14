@@ -1,6 +1,6 @@
 ---
 layout: about_me
-title: About Me
+title: Contact Info
 description: "Roboticist & Mechanical Engineer"
 ---
 Email: s.la.rota@tum.de
