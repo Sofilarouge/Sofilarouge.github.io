@@ -41,7 +41,7 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 
 <figure>
   <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:70%">
-  <figcaption> Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar </small></figcaption>
+  <figcaption> Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. </figcaption>
 </figure>
 
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
@@ -49,17 +49,27 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 
 
 <h2>{{ "Soft Foot with Selective Flexibility" }}</h2>
-<!-- 
-<p>{{ "We used the pseudo-rigid model (PRM) approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness. This stiffness depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle. One notable aspect of the design is that joints 2 and 3 (as seen in the sketch) are springs in a serial configuration. During dual-flexion, the toe joint movement is constrained by the floor. However, as soon as the foot starts to lift off during toe-off, this constraint is removed and allows both heel and toe joint to act as a single equivalent (softer) spring. Thus, a change in overall stiffness can be achieved." }}</p>
--->
-<!-- 
-<p>{{ "Two design iterations were made. A first design was made in CAD using Solid Works, after which it was exported to Ansys to simulate its dynamic behavior under different conditions. Additionally, we implemented topological optimization to reduce structurally redundant material. The second, revised version included improved aesthetics, as well as improved stability on inversion-eversion by adding a thicker cross section (added stiffness) and ensure motion limits." }}</p>
- -->
 
+<figure>
+  <img src="/assets/images/compliant_foot/PRM_flat.JPG" alt="Gait_Cycle">
+</figure>
+
+<p>{{ "We used the <b>pseudo-rigid model (PRM)</b> approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness, which depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle." }}</p>
+
+<!-- 
 <table style="width:100%">
   <tr>
     <td style="width:40%"><img src="/assets/images/compliant_foot/PRM.JPG" alt="sketch"></td>
     <td style="width:60%"><p>{{ "We used the pseudo-rigid model (PRM) approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness, which depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle. One notable aspect of the design is that joints 2 and 3 (as seen in the sketch) are springs in a serial configuration. During dual-flexion, the toe joint movement is constrained by the floor. However, as soon as the foot starts to lift off during toe-off, this constraint is removed and allows both heel and toe joint to act as a single equivalent (softer) spring. Thus, a change in overall stiffness can be achieved." }}</p></td>
+  </tr>
+</table>
+-->
+
+
+<table style="width:100%">
+  <tr>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/software_img.png" alt="sketch"></td>
+    <td style="width:50%"><p>{{ "Two design iterations were made. A first design was made in CAD using Solid Works, after which it was exported to Ansys to simulate its dynamic behavior under different conditions. Additionally, we implemented <b>topological optimization</b> to reduce structurally redundant material. The second, revised version included improved aesthetics, as well as improved stability on inversion-eversion by adding a thicker cross section (added stiffness) and ensure motion limits."}}</p></td>
   </tr>
 </table>
 
@@ -87,6 +97,10 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
   </tr>
 </table>
  -->
+<figure>
+    <img src="/assets/images/compliant_foot/inversion-eversion.gif" alt="Inversion-Eversion">
+</figure>
+
 <table style="width:100%">
     <tr>
         <td><p>{{ " " }}</p></td>
@@ -112,9 +126,6 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 
 Note: movement amplitude was constrained to avoid buckling.
 
-<figure>
-  <img src="/assets/images/compliant_foot/inversion-eversion.gif" alt="Inversion-Eversion" style="width:80%">
-</figure>
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 <!-- 
@@ -130,6 +141,9 @@ Note: movement amplitude was constrained to avoid buckling.
   </tr>
 </table>
 -->
+<figure>
+    <img src="/assets/images/compliant_foot/dorsiflexion-plantarflexion.gif" alt="Inversion-Eversion">
+</figure>
 
 <table style="width:100%">
     <tr>
@@ -174,6 +188,10 @@ Note: movement amplitude was constrained to avoid buckling.
   </tr>
 </table>
 -->
+
+<figure>
+    <img src="/assets/images/compliant_foot/toe-off.gif" alt="Inversion-Eversion">
+</figure>
 
 <table style="width:100%">
     <tr>
