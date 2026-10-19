@@ -89,6 +89,11 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 </video>
 
 <video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/meep.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video height="250" autoplay muted loop>
   <source src="/assets/images/Carangiform_locomotion/carangiform_locomotion_cropped.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
