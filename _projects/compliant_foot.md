@@ -87,7 +87,6 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
   </tr>
 </table>
  -->
-<small>
 <table style="width:100%">
     <tr>
         <td><p>{{ " " }}</p></td>
@@ -110,14 +109,12 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
         <td><p>{{ "10.5" }}</p></td>
     </tr>
 </table>
-</small>
 
 Note: movement amplitude was constrained to avoid buckling.
 
-<video height="250" autoplay muted loop>
-  <source src="/assets/images/compliant_foot/Inversion-Eversion-color.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<figure>
+  <img src="/assets/images/compliant_foot/inversion_eversion.gif" alt="Inversion-Eversion" style="width:80%">
+</figure>
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 <!-- 
