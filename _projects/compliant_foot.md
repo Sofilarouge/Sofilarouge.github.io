@@ -32,18 +32,16 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 <p>{{ " The normative human gait consistes of three distinct stages:" }}</p>
 
  <ul>
-    <li> <p>{{ "<b style="color:#157878;">Foot-strike:</b> The heel receives and dampens the dynamic impact of the body weight (reaction force equivalent to 120% of the body weight applied on the heel alone)." }}</p> </li>
-    <li> <p>{{ "<b style="color:#157878;">Dual-flexion:</b> the foot is completely on the ground (distributed force equivalent to 80% of the body weight)." }}</p> </li>
-    <li> <p>{{ "<b style="color:#157878;">Toe-off:</b> the load is applied at the toes, which accumulate tension to provide a propulsive effect (reaction force equivalent to the body weight applied only on the toe section)." }}</p> </li>
+    <li> <p>{{ "<b>Foot-strike:</b> The heel receives and dampens the dynamic impact of the body weight (reaction force equivalent to 120% of the body weight applied on the heel alone)." }}</p> </li>
+    <li> <p>{{ "<b>Dual-flexion:</b> the foot is completely on the ground (distributed force equivalent to 80% of the body weight)." }}</p> </li>
+    <li> <p>{{ "<b>Toe-off:</b> the load is applied at the toes, which accumulate tension to provide a propulsive effect (reaction force equivalent to the body weight applied only on the toe section)." }}</p> </li>
 </ul>
 
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
 
 <figure>
   <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:70%">
-  <figcaption><small>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
-and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
-8.3 (2013), e59935.</figcaption>
+  <figcaption><small>{{ pAnkle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar  | markdownify }}</small></figcaption>
 </figure>
 
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
@@ -61,14 +59,13 @@ and propulsive work of the human ankle in the stance phase of walking”. In: Pl
 <table style="width:100%">
   <tr>
     <td style="width:40%"><img src="/assets/images/compliant_foot/PRM.JPG" alt="sketch"></td>
-    <td style="width:60%"><p>{{ "We used the pseudo-rigid model (PRM) approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness. This stiffness depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle. One notable aspect of the design is that joints 2 and 3 (as seen in the sketch) are springs in a serial configuration. During dual-flexion, the toe joint movement is constrained by the floor. However, as soon as the foot starts to lift off during toe-off, this constraint is removed and allows both heel and toe joint to act as a single equivalent (softer) spring. Thus, a change in overall stiffness can be achieved." }}</p></td>
+    <td style="width:60%"><p>{{ "We used the pseudo-rigid model (PRM) approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness, which depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle. One notable aspect of the design is that joints 2 and 3 (as seen in the sketch) are springs in a serial configuration. During dual-flexion, the toe joint movement is constrained by the floor. However, as soon as the foot starts to lift off during toe-off, this constraint is removed and allows both heel and toe joint to act as a single equivalent (softer) spring. Thus, a change in overall stiffness can be achieved." }}</p></td>
   </tr>
 </table>
 
 <p>{{ "Two design iterations were made. A first design was made in CAD using Solid Works, after which it was exported to Ansys to simulate its dynamic behavior under different conditions. Additionally, we implemented topological optimization to reduce structurally redundant material. The second, revised version included improved aesthetics, as well as improved stability on inversion-eversion by adding a thicker cross section (added stiffness) and ensure motion limits." }}</p>
 
 <h2>{{ "Quantitative results: Mechanical Properties according to Simulations" }}</h2>
-<h3>{{ "Gait Cycle" }}</h3>
 
 Some of the results can be seen below. For reference: BW refers to a unit of force equivalent to one body weight under standard gravity.
 <figure>
@@ -236,5 +233,5 @@ Note: movement amplitude was constrained to avoid buckling.
 <h2>{{ "Qualitative Results: Visual Similarities in Proof of Concept" }}</h2>
 <p>{{ " A life-size prototype was printed on TPU Ninja-flex and mounted on a frame. Using our own body weight as reference, we did a visual comparison of the foot deformations when stepping on a small plastic cap. Although no objective measure was used and more accurate testing equipment was unavailable for the project, the experimental results are visually similar to the simulated deformations. " }}</p>
 
-![fish2](/assets/images/compliant_foot/step_cap.JPG)
+![step_cap](/assets/images/compliant_foot/step_cap.JPG)
 
