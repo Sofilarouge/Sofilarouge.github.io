@@ -77,21 +77,25 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 </figure>
 
 <h3>{{ "Eversion - Inversion" }}</h3>
+<!-- 
 <p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
 <p>{{ "Stiffness: 3.44 Nm/degree" }}</p>
+ -->
 
+<!-- 
 <table style="width:100%">
   <tr>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.PNG" alt="angular displacement"></td>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
+ -->
 
 <table style="width:100%">
     <tr>
         <td><p>{{ " " }}</p></td>
         <th><p>{{ "Reference Value" }}</p></th>
-        <th><p>{{ "Simulated" }}</p></th>
+        <th><p>{{ "Simulated Value" }}</p></th>
     </tr>
     <tr>
         <th><p>{{ "Stiffness [Nm/°]" }}</p></th>
@@ -100,7 +104,7 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
     </tr>
     <tr>
         <th><p>{{ "Movement range (Inversion) [°]" }}</p></th>
-        <td><p>{{ "25" }}</p></td>
+        <td><p>{{ "22" }}</p></td>
         <td><p>{{ "11.35" }}</p></td>
     </tr>
     <tr>
@@ -119,14 +123,41 @@ Note: movement amplitude was constrained to avoid buckling.
 -->
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
+<!-- 
 <p>{{ "Movement amplitude: 5.44° (dorsiflexion) -5.95° (plantar flexion)" }}</p>
 <p>{{ "Stiffness: 16.29 Nm/degree" }}</p>
+-->
 
+<!-- 
 <table style="width:100%">
   <tr>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_dp_1.PNG" alt="angular displacement"></td>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_dp_2.PNG" alt="stiffness"></td>
   </tr>
+</table>
+-->
+
+<table style="width:100%">
+    <tr>
+        <td><p>{{ " " }}</p></td>
+        <th><p>{{ "Reference Value" }}</p></th>
+        <th><p>{{ "Simulated Value" }}</p></th>
+    </tr>
+    <tr>
+        <th><p>{{ "Stiffness [Nm/°]" }}</p></th>
+        <td><p>{{ "3.35 - 17.31" }}</p></td>
+        <td><p>{{ "16.29" }}</p></td>
+    </tr>
+    <tr>
+        <th><p>{{ "Movement range (Dorsiflexion) [°]" }}</p></th>
+        <td><p>{{ "25" }}</p></td>
+        <td><p>{{ "5.95" }}</p></td>
+    </tr>
+    <tr>
+        <th><p>{{ "Movement range (Plantar Flexion) [°]" }}</p></th>
+        <td><p>{{ "53" }}</p></td>
+        <td><p>{{ "5.44" }}</p></td>
+    </tr>
 </table>
 
 <!--
@@ -136,31 +167,36 @@ Note: movement amplitude was constrained to avoid buckling.
 -->
 
 <h3>{{ "Toe Joint" }}</h3>
+<!-- 
 <p>{{ "Movement amplitude: 20.4°" }}</p>
 <p>{{ "Stiffness: 6.44 Nm/degree" }}</p>
+-->
 
+<!-- 
 <table style="width:100%">
   <tr>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_1.PNG" alt="angular displacement"></td>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_toe_2.PNG" alt="stiffness"></td>
   </tr>
 </table>
-
-<!--
-<video height="250" autoplay muted loop src="/assets/images/compliant_foot/Dorsilexion-Plantarflexion-Color.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 -->
 
-<h3>{{ "Combined Toe and Heel" }}</h3>
-<p>{{ "Movement amplitude: 11.89° (heel) 34.31° (Toes)" }}</p>
-<p>{{ "Stiffness: 8.83 Nm/degree" }}</p>
-
 <table style="width:100%">
-  <tr>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_1.PNG" alt="angular displacement"></td>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.PNG" alt="stiffness"></td>
-  </tr>
+    <tr>
+        <td><p>{{ " " }}</p></td>
+        <th><p>{{ "Reference Value" }}</p></th>
+        <th><p>{{ "Simulated Value" }}</p></th>
+    </tr>
+    <tr>
+        <th><p>{{ "Stiffness [Nm/°]" }}</p></th>
+        <td><p>{{ "N/A" }}</p></td>
+        <td><p>{{ "6.44" }}</p></td>
+    </tr>
+    <tr>
+        <th><p>{{ "Movement range [°]" }}</p></th>
+        <td><p>{{ "60" }}</p></td>
+        <td><p>{{ "20.4" }}</p></td>
+    </tr>
 </table>
 
 <!--
@@ -169,7 +205,30 @@ Note: movement amplitude was constrained to avoid buckling.
 </video>
 -->
 
-<h3>{{ "Simulation Results" }}</h3>
+<!--
+<h3>{{ "Combined Toe and Heel" }}</h3>
+-->
+<!--
+<p>{{ "Movement amplitude: 11.89° (heel) 34.31° (Toes)" }}</p>
+<p>{{ "Stiffness: 8.83 Nm/degree" }}</p>
+-->
+
+<!--
+<table style="width:100%">
+  <tr>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_1.PNG" alt="angular displacement"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/sim_comb_2.PNG" alt="stiffness"></td>
+  </tr>
+</table>
+-->
+
+<!--
+<video height="250" autoplay muted loop src="/assets/images/compliant_foot/Dorsilexion-Plantarflexion-Color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+-->
+
+<!-- <h3>{{ "Simulation Results" }}</h3> -->
 
 
 <p>{{ "" }}</p>
