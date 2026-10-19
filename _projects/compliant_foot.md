@@ -38,11 +38,14 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 </ul>
 
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
+<p>{{ "" }}</p>
 
 <figure>
   <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:70%">
   <figcaption> Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. </figcaption>
 </figure>
+
+<p>{{ "" }}</p>
 
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
 
@@ -51,7 +54,7 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 <h2>{{ "Soft Foot with Selective Flexibility" }}</h2>
 
 <figure>
-  <img src="/assets/images/compliant_foot/PRM_flat.JPG" alt="Gait_Cycle">
+  <img src="/assets/images/compliant_foot/PRM_flat.jpg" alt="Gait_Cycle">
 </figure>
 
 <p>{{ "We used the <b>pseudo-rigid model (PRM)</b> approximation as a starting point. In this case, the flexible foot was modelled as a multibody mechanism in which the thinner sections act as pivot joints with torsional springs wth a characteristic stiffness, which depends on the section geometry and the Young's modulus of the selected material. The rough section profiles were selected based on this principle." }}</p>
@@ -68,12 +71,14 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 
 <table style="width:100%">
   <tr>
-    <td style="width:50%"><img src="/assets/images/compliant_foot/software_img.png" alt="sketch"></td>
+    <td style="width:50%"><img src="/assets/images/compliant_foot/software_img.PNG" alt="sketch"></td>
     <td style="width:50%"><p>{{ "Two design iterations were made. A first design was made in CAD using Solid Works, after which it was exported to Ansys to simulate its dynamic behavior under different conditions. Additionally, we implemented <b>topological optimization</b> to reduce structurally redundant material. The second, revised version included improved aesthetics, as well as improved stability on inversion-eversion by adding a thicker cross section (added stiffness) and ensure motion limits."}}</p></td>
   </tr>
 </table>
 
+<!-- 
 <p>{{ "Two design iterations were made. A first design was made in CAD using Solid Works, after which it was exported to Ansys to simulate its dynamic behavior under different conditions. Additionally, we implemented topological optimization to reduce structurally redundant material. The second, revised version included improved aesthetics, as well as improved stability on inversion-eversion by adding a thicker cross section (added stiffness) and ensure motion limits." }}</p>
+-->
 
 <h2>{{ "Quantitative results: Mechanical Properties according to Simulations" }}</h2>
 
