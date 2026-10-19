@@ -41,7 +41,7 @@ The full report can be downloaded <a href="/assets/documents/Final_Report__Desig
 
 <figure>
   <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:70%">
-  <figcaption><small>{{ pAnkle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar  | markdownify }}</small></figcaption>
+  <figcaption> Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar </small></figcaption>
 </figure>
 
 <p>{{ " During unimpeded, normal gait, the heel joint changes stiffness dynamically, becoming its stiffest during dual-flexion and much less so during toe-off. Of course, this change cannot be replicated with a passive deivice... or can it?" }}</p>
@@ -87,7 +87,7 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
   </tr>
 </table>
  -->
-
+<small>
 <table style="width:100%">
     <tr>
         <td><p>{{ " " }}</p></td>
@@ -110,14 +110,14 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
         <td><p>{{ "10.5" }}</p></td>
     </tr>
 </table>
+</small>
 
 Note: movement amplitude was constrained to avoid buckling.
 
-<!--
-<video height="250" autoplay muted loop src="/assets/images/compliant_foot/Inversion-Eversion-color.mp4" type="video/mp4">
+<video height="250" autoplay muted loop>
+  <source src="/assets/images/compliant_foot/Inversion-Eversion-color.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
--->
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
 <!-- 
