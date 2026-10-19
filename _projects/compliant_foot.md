@@ -113,7 +113,7 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 Note: movement amplitude was constrained to avoid buckling.
 
 <figure>
-  <img src="/assets/images/compliant_foot/inversion_eversion.gif" alt="Inversion-Eversion" style="width:80%">
+  <img src="/assets/images/compliant_foot/inversion-eversion.gif" alt="Inversion-Eversion" style="width:80%">
 </figure>
 
 <h3>{{ "Dorsiflexion - Plantar flexion" }}</h3>
