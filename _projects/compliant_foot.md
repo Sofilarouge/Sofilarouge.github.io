@@ -38,7 +38,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
 
 <figure>
-  <img src="/assets/images/compliant_foot/gait_cycle.pngg" alt="Gait_Cycle" style="width:80%">
+  <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:80%">
   <figcaption>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
 and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
 8.3 (2013), e59935.</figcaption>
@@ -85,6 +85,11 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 
 <video height="250" autoplay muted loop>
   <source src="/assets/images/compliant_foot/Dorsilexion-Plantarflexion-Color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video height="250" autoplay muted loop>
+  <source src="/assets/images/Carangiform_locomotion/carangiform_locomotion_cropped.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
