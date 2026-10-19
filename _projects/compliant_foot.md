@@ -6,6 +6,7 @@ image_url: /assets/images/foot2.jpg
 director: "Prof. Dr. Cristina Piazza"
 co-authors: "Nithin Balan"
 summary: "Design of a low-cost compliant foot prosthetic designed for traversing irregular terrain. Semester project for the class Neuroprosthetics (2022) TUM."
+tags: [ multibody dynamics, topological optimization, mechanical design, compliant mechanism, 3D printing, user-centered design ]
 ---
 ![fish2](/assets/images/foot2.jpg)
 
@@ -37,7 +38,7 @@ Rather than expensive and delicate electronics, this design relies on mechanical
 <!-- ![Gait Cycle](/assets/images/compliant_foot/gait_cycle.png) -->
 
 <figure>
-  <img src="/assets/images/compliant_foot/gait_cycle.png" alt="Gait_Cycle" style="width:80%">
+  <img src="/assets/images/compliant_foot/gait_cycle.pngg" alt="Gait_Cycle" style="width:80%">
   <figcaption>Ankle moment vs. relative angle curve for a representative subject walking at 1.75 m/s. image taken from Kamran Shamaei, Gregory S Sawicki, and Aaron M Dollar. “Estimation of quasi-stiffness
 and propulsive work of the human ankle in the stance phase of walking”. In: PloS one
 8.3 (2013), e59935.</figcaption>
@@ -74,6 +75,7 @@ Some of the results can be seen below. For reference: BW refers to a unit of for
 
 <p>{{ "Movement amplitude: -10.50° (Eversion) 11.35° (Inversion)" }}</p>
 <p>{{ "Stiffness: 3.44 Nm/degree" }}</p>
+
 <table style="width:100%">
   <tr>
     <td style="width:50%"><img src="/assets/images/compliant_foot/sim_ev_1.PNG" alt="angular displacement"></td>
